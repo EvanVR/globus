@@ -1,0 +1,203 @@
+/* Danai Roumelioti, dr3248@drexel.edu */
+/* CS530: dr3248, Assignment 2 */
+
+body {
+    font-family: "Avenir";
+    font-size: 1rem;
+    background: #eee;
+    font-family: Helvetica;
+}
+
+p {
+    margin: auto;
+    font-size: 1.1rem;
+    padding: 0 0 1%;
+}
+
+.content {
+    padding: 1rem 2rem;
+}
+
+footer {
+    background-color: #999;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+    width: 100%;
+    position: relative;
+    /* position:fixed; */
+    bottom: 0;
+    left:0;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    width: 100%;
+    background: #282A3A;
+}
+
+#navbar .container-fluid {
+    padding: 0 2rem;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #FFC600;
+}
+
+.navbar-expand-md .navbar-nav .nav-link.dropdown-item {
+    color: #FFC600;
+}
+
+.navbar-expand-md .navbar-nav .nav-link.dropdown-item.active{
+    color: white;
+    background-color: #282A3A;
+}
+
+
+.dropdown-menu[data-bs-popper] {
+    background-color: #282A3A;
+}
+
+.nav-item {
+    padding: 0 1rem;
+}
+
+/* Home page */
+
+#home {
+    text-align: center;
+    /* width: 75%; */
+    margin: 5% auto 120px;
+}
+
+.carousel-section {
+    padding: 3% 10%;
+    /* background-color: #ff4c68;
+*/}
+
+.home-img {
+    width: 60%;
+    /* height: 10%; */
+}
+
+.btn {
+    margin: 1rem;
+}
+
+.jumbotron {
+    padding: 1.5rem;
+    background: 0;
+}
+
+/* About page */
+
+#about {
+    width: 60%;
+    line-height: 2rem;
+}
+
+
+/* Our trips  */
+.path {
+    line-height: 2rem;
+    color: #999;
+}
+
+#regions {
+    padding: 0 5rem;
+}
+
+.region-col {
+    padding: 1rem 2% 2%;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    .dog-img {
+        width: 50%;
+        transform: rotate(0);
+        position: static;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+/* Bikes Page */
+
+#bikes {
+    width: 70%;
+    line-height: 2rem;
+    padding: 0 2rem;
+}
+
+thead {
+    font-weight: bold;
+}
+
+#bikes .img-fluid {
+    max-width: 100px;
+}
+
+
+/* Rent Page */
+
+#rent {
+    width: 70%;
+    line-height: 2rem;
+    padding: 0 2rem;
+}
+
+#rent .img-fluid {
+    max-width: 100px;
+}
+
+.reset-col {
+    width: 5rem;
+    /* font-size: large; */
+}
+
+.reset-btn {
+    background-color: #B73E3E;
+    color: white;
+    border-radius: 10%;
+    border: #B73E3E;
+    /* padding-right: 2.5rem; */
+    width: 4.5rem;
+    text-align: center;
+}
+
+.reset-btn.pressed {
+    background-color: #840B0B;
+}
+
+
+.reset-btn:focus, .quantity-btn:focus{
+    outline: 0;
+}
+
+.quantity-btn {
+    background-color: #AAAAAA;
+    border-radius: 16%;
+    width: 2rem;
+    border: #AAAAAA;
+    outline: 0;
+}
+
+.quantity-btn.minus {
+    margin: 0 8% 0 0;
+}
+
+.quantity-btn.pressed {
+    background-color: #666;
+}
+
+.unavailable {
+    opacity: 0.25;
+}

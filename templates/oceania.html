@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% set active = "Our trips" %}
+{% set active_cont = "Oceania" %}
+
+{% block title %}
+Related Sites
+{% endblock %}
+
+{% block content %}
+<section id="oceania">
+    <span class="path">Our trips > Oceania</span>
+    <h1>oceania</h1>
+
+    <section id="regions">
+      <div class="row">
+        <!-- <div class="pricing-column col-lg-4 col-md-6 col-sm-12"> -->
+        <div class="region-col col-lg-6 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <h3>Middle East</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">Free</h2>
+              <p>blah blah blah</p>
+              <p>blah blah blah</p>
+              <p>blah blah blah</p>
+              <button class="btn btn-lg btn-block btn-outline-dark" type="button">More</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="region-col col-lg-6 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <h3>Indian Peninsula</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$49 / mo</h2>
+              <p>blah blah blah</p>
+              <p>blah blah blah</p>
+              <p>blah blah blah</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">More... </button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="region-col col-lg-6 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              <h3>Indochina</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$99 / mo</h2>
+              <p>blah blah blah</p>
+              <p>blah blah blah</p>
+              <p>blah blah blah</p>
+              <button class="btn btn-lg btn-block btn-dark" type="button">More...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</section>
+{% endblock %}

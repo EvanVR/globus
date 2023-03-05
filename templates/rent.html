@@ -1,0 +1,40 @@
+<!-- Danai Roumelioti, dr3248@drexel.edu -->
+<!-- CS530: dr3248, Assignment 2  -->
+
+{% extends 'base.html' %}
+{% set active = "Rent" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block header %}
+<script src="/static/js/rentView.js"></script>
+{% endblock %}
+
+{% block content %}
+<section id="rent">
+    <h1>Rent a Bike</h1>
+    <p class="rent-text">
+        Please select a rental from our available bikes below! 
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</section>
+
+<script>
+    $(() => {
+        const rentViewer = new rentView();
+        rentViewer.load();
+    });
+</script>
+    
+{% endblock %}
