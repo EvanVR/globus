@@ -52,6 +52,18 @@ def europe():
 def oceania():
     return render_template('oceania.html')
 
+#Evan 
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+
+#Evan
+@app.route('/details')
+def details():
+    return render_template('details.html')
+
+
 # @app.route('/rent')
 # def rent():
     # return render_template('rent.html')
