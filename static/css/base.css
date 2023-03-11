@@ -125,6 +125,43 @@ footer {
     }
 }
 
+/*card img ------------EVAN*/   
+
+.card-img {
+    width: auto;
+    height: auto;
+}
+
+/*account login ---------EVAN*/
+
+.nav-right {
+    float: right;
+  }
+
+
+Evan changes on css
+
+/* Fonts   
+$mainFont: 'Raleway', sans-serif
+$subFont: 'Montserrat', sans-serif
+
+// Color Scheme
+$primaryColor: #f95959
+$secondaryColor: #f7edd5
+$inputColor: #bbbbbb
+
+
+
+// General Style */
+/* body
+   font-family: $subFont
+   background: $secondaryColor */
+
+
+
+
+
+
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -201,3 +238,44 @@ thead {
 .unavailable {
     opacity: 0.25;
 }
+
+
+
+/*details css*/
+
+*{
+    box-sizing: border-box;
+  }
+  .article{
+    width:900px;
+    margin:30px;
+    padding:12px;
+    background:#efefef;
+    border-radius:5px;
+  }
+  .image{
+    background:silver;
+    width:500px;
+    height:400px;
+    border-radius:5px;
+    padding:20px;
+    color:#efefef;
+    font-size:8rem;
+    float:right;
+    margin-left:20px;
+    }
+  .content{
+    padding: 0 20px;
+    color:#444;
+  }
+  /*ClearFix 
+  .group{
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    } 
+    &:after {
+      clear: both;
+    }
+  }
