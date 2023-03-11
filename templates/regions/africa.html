@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% set active = "Our trips" %}
+{% set active_cont = "Africa" %}
+
+{% block title %}
+Related Sites
+{% endblock %}
+
+{% block content %}
+<section id="africa">
+    <span class="path">Our trips > Africa</span>
+    <h1>africa</h1>
+    
+    <section id="regions">
+      <div class="row">
+        <div class="region-col col-lg-6 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <img src="../../static/img/asia/alex-vasey-5_Bu25SV6X8-unsplash.jpg" alt="">
+            </div>
+            <button class="btn">Middle East</button>
+          </div>
+        </div>
+    
+        <div class="region-col col-lg-6 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <img src="../../static/img/asia/sylwia-bartyzel-eU4pipU_8HA-unsplash.jpg" alt="">
+            </div>
+            <button class="btn">Indian Peninsula</button>
+          </div>
+        </div>
+    
+        <div class="region-col col-lg-6 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <img src="../../static/img/asia/vicky-t-EY3tC81nFt0-unsplash.jpg" alt="">
+            </div>
+            <button class="btn btn-dark">Indochina</button>
+          </div>
+        </div>
+
+        <div class="region-col col-lg-6 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <img src="../../static/img/asia/tianshu-liu-SBK40fdKbAg-unsplash.jpg" alt="">
+            </div>
+            <button class="btn btn-dark">Far East</button>
+          </div>
+
+      </div>
+    </section>
+</section>
+{% endblock %}
