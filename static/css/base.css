@@ -2,17 +2,16 @@
 /* CS530: dr3248, Assignment 2 */
 
 body {
-    font-family: "Avenir";
     font-size: 1rem;
     background: #eee;
     font-family: Helvetica;
 }
 
-p {
-    margin: auto;
-    font-size: 1.1rem;
-    padding: 0 0 1%;
-}
+/* p { */
+    /* margin: auto; */
+    /* font-size: 1.1rem; */
+    /* padding: 0 0 1%; */
+/* } */
 
 .content {
     padding: 1rem 2rem;
@@ -84,14 +83,14 @@ footer {
     /* height: 10%; */
 }
 
-.btn {
-    margin: 1rem;
-}
+/* .btn { */
+    /* margin: 1rem; */
+/* } */
 
-.jumbotron {
-    padding: 1.5rem;
-    background: 0;
-}
+/* .jumbotron { */
+    /* padding: 1.5rem; */
+    /* background: 0; */
+/* } */
 
 /* About page */
 
@@ -115,26 +114,26 @@ footer {
     padding: 1rem 2% 2%;
 }
 
-#oceania img {
+#trips img {
     border-radius: 100%;
     width: 80%;
     margin: 1rem ;
 }
 
-#oceania p {
+#trips h2 {
+    margin-top: 2rem;
+}
+
+#trips p {
     width: 100%;
     margin: 2rem auto 2rem;
+    font-size: 1.1rem;
 }
-/* #oceania div { */
-    /* margin-bottom: 30rem; */
-/* } */
-/*  */
-#oceania .row {
+
+#trips .row {
     width: 70%;
     margin: 2rem 20rem 1rem 7rem;
-    border: #444;
-    border-bottom: #840B0B;
-    
+    border: 1pt solid #ddd;
 }
 
 table {
@@ -142,9 +141,8 @@ table {
     margin: 2rem 20rem 1rem 7rem;
 }
 
-#oceania tr {
-    border: 1pt solid black;
-    width: 50%;
+#trips tr {
+    border: 1pt solid #ddd;
 }
 
 /* #oceania tr p { */
@@ -167,6 +165,7 @@ table {
 
 .card .btn {
     background-color: #FFC600;
+    margin: 1rem;
 }
 
 .card .btn:hover {
