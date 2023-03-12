@@ -1,6 +1,3 @@
-# Danai Roumelioti, dr3248@drexel.edu
-# CS530: dr3248, Assignment 2 
-
 from database import Database
 
 from flask import Flask, g, json, render_template, request
@@ -32,25 +29,63 @@ def about():
     return render_template('about.html')
 
 
+############################### continents ##################################
+
 @app.route('/asia')
 def asia():
-    return render_template('asia.html')
+    return render_template('regions/asia.html')
 
 @app.route('/africa')
 def africa():
-    return render_template('africa.html')
+    return render_template('regions/africa.html')
 
 @app.route('/america')
 def america():
-    return render_template('america.html')
+    return render_template('regions/america.html')
 
 @app.route('/europe')
 def europe():
-    return render_template('europe.html')
+    return render_template('regions/europe.html')
 
 @app.route('/oceania')
 def oceania():
-    return render_template('oceania.html')
+    return render_template('regions/oceania.html')
+
+
+############################### regions ##################################
+
+# asia
+
+@app.route('/middle_east')
+def middle_east():
+    return render_template('regions/asia/middle_east.html')
+
+@app.route('/indochina')
+def indochina():
+    return render_template('regions/asia/indochina.html')
+
+@app.route('/far_east')
+def far_east():
+    return render_template('regions/asia/far_east.html')
+
+@app.route('/indian_peninsula')
+def indian_peninsula():
+    return render_template('regions/asia/indian_peninsula.html')
+
+# america
+
+@app.route('/north_america')
+def north_america():
+    return render_template('regions/america/north_america.html')
+
+@app.route('/central_america')
+def central_america():
+    return render_template('regions/america/central_america.html')
+
+@app.route('/south_america')
+def south_america():
+    return render_template('regions/america/south_america.html')
+
 
 #Evan 
 @app.route('/login')
