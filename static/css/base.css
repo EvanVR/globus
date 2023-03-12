@@ -70,16 +70,16 @@ footer {
 #home {
     text-align: center;
     /* width: 75%; */
-    margin: 5% auto 120px;
+    margin: 2% auto 120px;
 }
 
 .carousel-section {
-    padding: 3% 10%;
+    padding: 2% 10%;
     /* background-color: #ff4c68;
 */}
 
 .home-img {
-    width: 60%;
+    width: 90%;
     /* height: 10%; */
 }
 
@@ -114,16 +114,37 @@ footer {
     padding: 1rem 2% 2%;
 }
 
-@media (max-width: 1028px) {
-    #title {
-        text-align: center;
-    }
-    .dog-img {
-        width: 50%;
-        transform: rotate(0);
-        position: static;
-    }
+/* Cards */
+
+.card-header h3 {
+    text-align: center;
 }
+
+.card-body img {
+    width:100%;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+.card .btn {
+    background-color: #FFC600;
+}
+
+.card .btn:hover {
+    background-color: #DDA400;
+}
+/* @media (max-width: 1028px) { */
+    /* #title { */
+        /* text-align: center; */
+    /* } */
+    /* .dog-img { */
+        /* width: 50%; */
+        /* transform: rotate(0); */
+        /* position: static; */
+    /* } */
+/* } */
 
 /*card img ------------EVAN*/   
 
