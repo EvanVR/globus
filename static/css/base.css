@@ -23,6 +23,7 @@ footer {
     text-align: center;
     color: white;
     padding: 1.5rem;
+    margin-top: 3rem;
     width: 100%;
     position: relative;
     /* position:fixed; */
@@ -114,6 +115,42 @@ footer {
     padding: 1rem 2% 2%;
 }
 
+#oceania img {
+    border-radius: 100%;
+    width: 80%;
+    margin: 1rem ;
+}
+
+#oceania p {
+    width: 100%;
+    margin: 2rem auto 2rem;
+}
+/* #oceania div { */
+    /* margin-bottom: 30rem; */
+/* } */
+/*  */
+#oceania .row {
+    width: 70%;
+    margin: 2rem 20rem 1rem 7rem;
+    border: #444;
+    border-bottom: #840B0B;
+    
+}
+
+table {
+    width: 70%;
+    margin: 2rem 20rem 1rem 7rem;
+}
+
+#oceania tr {
+    border: 1pt solid black;
+    width: 50%;
+}
+
+/* #oceania tr p { */
+    /* margin-left: 1rem; */
+    /* padding: 1rem; */
+/* } */
 /* Cards */
 
 .card-header h3 {
