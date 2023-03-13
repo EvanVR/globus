@@ -33,58 +33,58 @@ def about():
 
 @app.route('/asia')
 def asia():
-    return render_template('asia.html')
+    return render_template('continents/asia.html')
 
 @app.route('/africa')
 def africa():
-    return render_template('regions/africa.html')
+    return render_template('trips/africa.html')
 
 @app.route('/america')
 def america():
-    return render_template('america.html')
+    return render_template('continents/america.html')
 
 @app.route('/europe')
 def europe():
-    return render_template('regions/europe.html')
+    return render_template('trips/europe.html')
 
 @app.route('/oceania')
 def oceania():
-    return render_template('regions/oceania.html')
+    return render_template('trips/oceania.html')
 
 
-############################### regions ##################################
+############################### trips ##################################
 
 # asia
 
 @app.route('/middle_east')
 def middle_east():
-    return render_template('regions/asia/middle_east.html')
+    return render_template('trips/asia/middle_east.html')
 
 @app.route('/indochina')
 def indochina():
-    return render_template('regions/asia/indochina.html')
+    return render_template('trips/asia/indochina.html')
 
 @app.route('/far_east')
 def far_east():
-    return render_template('regions/asia/far_east.html')
+    return render_template('trips/asia/far_east.html')
 
 @app.route('/indian_peninsula')
 def indian_peninsula():
-    return render_template('regions/asia/indian_peninsula.html')
+    return render_template('trips/asia/indian_peninsula.html')
 
 # america
 
 @app.route('/north_america')
 def north_america():
-    return render_template('regions/america/north_america.html')
+    return render_template('trips/america/north_america.html')
 
 @app.route('/central_america')
 def central_america():
-    return render_template('regions/america/central_america.html')
+    return render_template('trips/america/central_america.html')
 
 @app.route('/south_america')
 def south_america():
-    return render_template('regions/america/south_america.html')
+    return render_template('trips/america/south_america.html')
 
 
 #Evan 
