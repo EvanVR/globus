@@ -79,7 +79,7 @@ footer {
 */}
 
 .home-img {
-    width: 90%;
+    width: 100%;
     /* height: 10%; */
 }
 
@@ -96,9 +96,28 @@ footer {
 
 #about {
     width: 60%;
-    line-height: 2rem;
+    text-align: center;
+    margin: 2rem auto;
 }
 
+#about h1 {
+
+    line-height: 3.5rem;
+    font-family: 'Gochi Hand', cursive;
+} 
+
+#about p {
+    margin-top: 2rem;
+    /* font-family: Sacramento; */
+    /* font-family: Montserrat; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Sacramento', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Gochi Hand', cursive;
+
+    font-size: 1.5rem; /*for dynamic size - use %: note that 100% = 16px = 1em*/
+    line-height: 3rem;
+}
 
 /* Our trips  */
 .path {
@@ -110,14 +129,24 @@ footer {
     padding: 0 5rem;
 }
 
-.region-col {
-    padding: 1rem 2% 2%;
+#regions .region-col {
+    padding: 1rem;
+    /* margin-top: 1rem; */
+}
+
+#trips .col-lg-4 {
+    text-align: center;
 }
 
 #trips img {
     border-radius: 100%;
-    width: 80%;
-    margin: 1rem ;
+    width: 70%;
+    margin: 1rem;
+    /* margin: 2rem 0 1rem 2rem; */
+}
+
+#trips .col-lg-8 {
+    text-align: left;
 }
 
 #trips h2 {
@@ -126,7 +155,7 @@ footer {
 
 #trips p {
     width: 100%;
-    margin: 2rem auto 2rem;
+    margin: 2rem auto 1rem;
     font-size: 1.1rem;
 }
 
@@ -134,6 +163,8 @@ footer {
     width: 70%;
     margin: 2rem 20rem 1rem 7rem;
     border: 1pt solid #ddd;
+    border-radius: 25px;
+    background-color: #ddd;
 }
 
 table {
@@ -145,6 +176,36 @@ table {
     border: 1pt solid #ddd;
 }
 
+#trips .btn {
+   position: relative;
+   left: 30rem;
+   background-color: #FFC600;
+}
+
+#trips .btn:hover {
+    background-color: #DDA400;
+}
+
+@media (max-width: 1200px) {
+    #trips img {
+        width: 90%;
+        /* margin: 2rem 1rem 1rem; */
+        margin: 1rem;
+    }
+    #trips .col-md-6 img {
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) {
+    #trips img {
+        width: 70%;
+        margin: 1rem;
+    }
+    #trips .col-sm-12 {
+        text-align: center;
+    }
+}
 /* #oceania tr p { */
     /* margin-left: 1rem; */
     /* padding: 1rem; */
@@ -171,16 +232,7 @@ table {
 .card .btn:hover {
     background-color: #DDA400;
 }
-/* @media (max-width: 1028px) { */
-    /* #title { */
-        /* text-align: center; */
-    /* } */
-    /* .dog-img { */
-        /* width: 50%; */
-        /* transform: rotate(0); */
-        /* position: static; */
-    /* } */
-/* } */
+
 
 /*card img ------------EVAN*/   
 
