@@ -1,0 +1,71 @@
+<!-- Danai Roumelioti, dr3248@drexel.edu -->
+<!-- CS530: dr3248, Assignment 2  -->
+
+{% extends 'base.html' %}
+{% set active = "Home" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<section id="home">
+    <section class="carousel-section">
+        <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active container-fluid" data-bs-interval="2000">
+                <img class="home-img" src="../static/img/safari.png" alt="safari-image">
+              </div>
+
+              <div class="carousel-item container-fluid" data-bs-interval="2000">
+                <img class="home-img" src="../static/img/hu-chen-0LwfbRtQ-ac-unsplash.jpg" alt="saf-image">
+              </div>
+              <div class="carousel-item container-fluid" data-bs-interval="2000">
+                <img class="home-img" src="../static/img/kiyoshi-Plgu4IpxxnQ-unsplash.jpg" alt="mountain-image">
+              </div>
+              <div class="carousel-item container-fluid" data-bs-interval="2000">
+                <img class="home-img" src="../static/img/randy-fath-epf1tdtIIkM-unsplash.jpg" alt="sunset-image">
+              </div>
+
+              <div class="carousel-item container-fluid" data-bs-interval="2000">
+                <img class="home-img" src="../static/img/tegan-mierle-fDostElVhN8-unsplash.jpg" alt="saf-image">
+              </div>
+              <div class="carousel-item container-fluid" data-bs-interval="2000">
+                <img class="home-img" src="../static/img/timur-garifov-PKZtpOIMRYk-unsplash.jpg" alt="mountain-image">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- <div class="text-center"> -->
+        <!-- <h1 class="jumbotron-heading">Drexel Bikes</h1> -->
+        <!-- <p class="lead text-muted">Love bikes? We're here for you!</p> -->
+        <!-- <p><img class="img-fluid jumbotron-img" src="../static/img/philly.jpg"></p> -->
+        <!-- <p> -->
+            <!-- <a href="/about" class="btn btn-secondary">Learn about us</a> -->
+            <!-- <a href="/rent" class="btn btn-secondary">See our bikes</a> -->
+        <!-- </p> -->
+    <!-- </div> -->
+
+</section>
+
+{% endblock %}

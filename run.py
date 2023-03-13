@@ -37,7 +37,7 @@ def asia():
 
 @app.route('/africa')
 def africa():
-    return render_template('trips/africa.html')
+    return render_template('regions/africa.html')
 
 @app.route('/america')
 def america():
@@ -45,47 +45,132 @@ def america():
 
 @app.route('/europe')
 def europe():
-    return render_template('trips/europe.html')
+    return render_template('regions/europe.html')
 
 @app.route('/oceania')
 def oceania():
-    return render_template('trips/oceania.html')
+    return render_template('regions/oceania.html')
 
 
-############################### trips ##################################
+############################### regions ##################################
 
 # asia
 
 @app.route('/middle_east')
 def middle_east():
-    return render_template('trips/asia/middle_east.html')
+    return render_template('regions/asia/middle_east.html')
 
 @app.route('/indochina')
 def indochina():
-    return render_template('trips/asia/indochina.html')
+    return render_template('regions/asia/indochina.html')
 
 @app.route('/far_east')
 def far_east():
-    return render_template('trips/asia/far_east.html')
+    return render_template('regions/asia/far_east.html')
 
 @app.route('/indian_peninsula')
 def indian_peninsula():
-    return render_template('trips/asia/indian_peninsula.html')
+    return render_template('regions/asia/indian_peninsula.html')
 
 # america
 
 @app.route('/north_america')
 def north_america():
-    return render_template('trips/america/north_america.html')
+    return render_template('regions/america/north_america.html')
 
 @app.route('/central_america')
 def central_america():
-    return render_template('trips/america/central_america.html')
+    return render_template('regions/america/central_america.html')
 
 @app.route('/south_america')
 def south_america():
-    return render_template('trips/america/south_america.html')
+    return render_template('regions/america/south_america.html')
 
+############################### trips ##################################
+
+# oceania
+
+@app.route('/sidney')
+def sidney():
+    return render_template('trips/sidney.html')
+
+@app.route('/new_zealand')
+def new_zealand():
+    return render_template('trips/new_zealand.html')
+
+@app.route('/west_papua')
+def west_papua():
+    return render_template('trips/west_papua.html')
+
+# europe
+
+@app.route('/valtics')
+def valtics():
+    return render_template('trips/valtics.html')
+
+@app.route('/iberian_peninsula')
+def iberian_peninsula():
+    return render_template('trips/iberian_peninsula.html')
+
+@app.route('/france')
+def france():
+    return render_template('trips/france.html')
+
+# africa
+
+@app.route('/kenya_uganda')
+def kenya_uganda():
+    return render_template('trips/kenya_uganda.html')
+
+@app.route('/egypt')
+def egypt():
+    return render_template('trips/egypt.html')
+
+@app.route('/tunisia')
+def tunisia():
+    return render_template('trips/tunisia.html')
+
+#middle east
+ 
+@app.route('/istanbul')
+def istanbul():
+    return render_template('trips/istanbul.html')
+
+@app.route('/jordan')
+def jordan():
+    return render_template('trips/jordan.html')
+
+# #far east
+# 
+# @app.route('/kenya_uganda')
+# def kenya_uganda():
+    # return render_template('trips/kenya_uganda.html')
+# 
+# @app.route('/egypt')
+# def egypt():
+    # return render_template('trips/egypt.html')
+# 
+# 
+# #indian peninsula 
+# 
+# @app.route('/kenya_uganda')
+# def kenya_uganda():
+    # return render_template('trips/kenya_uganda.html')
+# 
+# @app.route('/egypt')
+# def egypt():
+    # return render_template('trips/egypt.html')
+# 
+# #indochina
+# 
+# @app.route('/kenya_uganda')
+# def kenya_uganda():
+    # return render_template('trips/kenya_uganda.html')
+# 
+# @app.route('/egypt')
+# def egypt():
+    # return render_template('trips/egypt.html')
+# 
 
 #Evan 
 @app.route('/login')
