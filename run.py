@@ -33,7 +33,7 @@ def about():
 
 @app.route('/asia')
 def asia():
-    return render_template('regions/asia.html')
+    return render_template('asia.html')
 
 @app.route('/africa')
 def africa():
@@ -41,7 +41,7 @@ def africa():
 
 @app.route('/america')
 def america():
-    return render_template('regions/america.html')
+    return render_template('america.html')
 
 @app.route('/europe')
 def europe():
