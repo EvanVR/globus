@@ -184,15 +184,15 @@ def argentina():
     return render_template('trips/argentina.html')
 
 
-# indian peninsula 
+# central america 
 
-# @app.route('/n_india_nepal')
-# def n_india_nepal():
-    # return render_template('trips/n_india_nepal.html')
-# 
-# @app.route('/sri_lanka')
-# def sri_lanka():
-    # return render_template('trips/sri_lanka.html')
+@app.route('/mexico')
+def mexico():
+    return render_template('trips/mexico.html')
+
+@app.route('/cuba')
+def cuba():
+    return render_template('trips/cuba.html')
  
 # far east
 

@@ -8,6 +8,71 @@ Related Sites
 {% endblock %}
 
 {% block content %}
-    <span class="path"> Our trips > <a class="path" style="text-decoration: none;" href="/asia"> Asia > </a>
-    <a class="path" style="text-decoration: none;" href="/indochina"> Indochina </a> > Thailand</span>
+<span class="path"> Our trips > <a class="path" style="text-decoration: none;" href="/asia"> Asia > </a>
+<a class="path" style="text-decoration: none;" href="/indochina"> Indochina </a> > Thailand</span>
+
+<section class="trip-details">
+
+    <section class="carousel-section">
+      <div id="trips-carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#trips-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#trips-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#trips-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#trips-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#trips-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#trips-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active container-fluid" data-bs-interval="2000">
+              <img class="home-img" src="../static/img/oceania/sebastien-goldberg-CmU1hFeJgyk-unsplash.jpg" alt="tribe-img">
+            </div>
+
+            <div class="carousel-item container-fluid" data-bs-interval="2000">
+              <img class="home-img" src="../static/img/oceania/koon-chakhatrakan-yuitRKBAXAY-unsplash.jpg" alt="coral-img">
+            </div>
+            <div class="carousel-item container-fluid" data-bs-interval="2000">
+              <img class="home-img" src="../static/img/oceania/sophie-turner-LZVmvKlchM0-unsplash-1.jpg" alt="bay-img">
+            </div>
+            <div class="carousel-item container-fluid" data-bs-interval="2000">
+              <img class="home-img" src="../static/img/oceania/devin-kleu-vBbq0mhKF-g-unsplash.jpg" alt="jungle-img">
+            </div>
+
+            <div class="carousel-item container-fluid" data-bs-interval="2000">
+              <img class="home-img" src="../static/img/oceania/aaron-sebastian-bfgEYpS0Znk-unsplash.jpg" alt="house-img">
+            </div>
+            <div class="carousel-item container-fluid" data-bs-interval="2000">
+              <img class="home-img" src="../static/img/oceania/esther-grosscurt-gEwsCgFSYuU-unsplash.jpg" alt="boy-img">
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#trips-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#trips-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+    </section>
+    <div class="trip-text">
+      <h2>
+        The trip in a nutshell
+      </h2>
+      <p>
+        Places full of challenges like only a few on this planet. Wild nature with its astonishing biodiversity, the primal landscapes, the 
+        pristine wetlands, the emerald seas, the crystal waters, the underwater paradises, the vast deserts, the ancient rainforests, the indigenous 
+        tribes' sacred locations compose a picturesque kaleidoscope of images and colours. 
+        Places that the word surprise meats its true meaning! Moments where imagination and reality hardly differ.
+      </p>
+      <h6>Highlights</h6>
+      <ul>
+        <li>Initiation into Maori civilization (Fine Arts Institute, thematic performance with traditional dances) in new Zealand.</li>
+        <li>Visit Rainbow Springs Park with the rare flora and fauna of the area, meal in the Skyline in Rotorua with panoramic view of the
+             city and the lake. </li>
+        <li>Cruise in Milford's branches </li>
+      </ul>
+    </div>
+</section>
 {% endblock %}
