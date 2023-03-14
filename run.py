@@ -130,7 +130,7 @@ def egypt():
 def tunisia():
     return render_template('trips/tunisia.html')
 
-#middle east
+# middle east
  
 @app.route('/istanbul')
 def istanbul():
@@ -140,38 +140,70 @@ def istanbul():
 def jordan():
     return render_template('trips/jordan.html')
 
-# #far east
-# 
-# @app.route('/kenya_uganda')
-# def kenya_uganda():
-    # return render_template('trips/kenya_uganda.html')
-# 
-# @app.route('/egypt')
-# def egypt():
-    # return render_template('trips/egypt.html')
-# 
-# 
-# #indian peninsula 
-# 
-# @app.route('/kenya_uganda')
-# def kenya_uganda():
-    # return render_template('trips/kenya_uganda.html')
-# 
-# @app.route('/egypt')
-# def egypt():
-    # return render_template('trips/egypt.html')
-# 
-# #indochina
-# 
-# @app.route('/kenya_uganda')
-# def kenya_uganda():
-    # return render_template('trips/kenya_uganda.html')
-# 
-# @app.route('/egypt')
-# def egypt():
-    # return render_template('trips/egypt.html')
-# 
 
+# indochina
+
+@app.route('/thailand')
+def thailand():
+    return render_template('trips/thailand.html')
+
+@app.route('/vietnam_cambodia')
+def vietnam_cambodia():
+    return render_template('trips/vietnam_cambodia.html')
+
+
+# indian peninsula 
+
+@app.route('/n_india_nepal')
+def n_india_nepal():
+    return render_template('trips/n_india_nepal.html')
+
+@app.route('/sri_lanka')
+def sri_lanka():
+    return render_template('trips/sri_lanka.html')
+ 
+# far east
+
+@app.route('/japan')
+def japan():
+  return render_template('trips/japan.html')
+
+@app.route('/south_korea')
+def south_korea():
+  return render_template('trips/south_korea.html')
+ 
+
+# south america
+
+@app.route('/peru_bolivia')
+def peru_bolivia():
+    return render_template('trips/peru_bolivia.html')
+
+@app.route('/argentina')
+def argentina():
+    return render_template('trips/argentina.html')
+
+
+# indian peninsula 
+
+# @app.route('/n_india_nepal')
+# def n_india_nepal():
+    # return render_template('trips/n_india_nepal.html')
+# 
+# @app.route('/sri_lanka')
+# def sri_lanka():
+    # return render_template('trips/sri_lanka.html')
+ 
+# far east
+
+# @app.route('/japan')
+# def japan():
+#   return render_template('trips/japan.html')
+# 
+# @app.route('/south_korea')
+# def south_korea():
+#   return render_template('trips/south_korea.html')
+ 
 #Evan 
 @app.route('/login')
 def login():
