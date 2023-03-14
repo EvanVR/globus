@@ -104,17 +104,17 @@ def west_papua():
 
 # europe
 
-@app.route('/valtics')
-def valtics():
-    return render_template('trips/valtics.html')
+@app.route('/baltics')
+def baltics():
+    return render_template('trips/baltics.html')
 
 @app.route('/iberian_peninsula')
 def iberian_peninsula():
     return render_template('trips/iberian_peninsula.html')
 
-@app.route('/france')
-def france():
-    return render_template('trips/france.html')
+@app.route('/rome')
+def rome():
+    return render_template('trips/rome.html')
 
 # africa
 
@@ -193,16 +193,6 @@ def mexico():
 @app.route('/cuba')
 def cuba():
     return render_template('trips/cuba.html')
- 
-# far east
-
-# @app.route('/japan')
-# def japan():
-#   return render_template('trips/japan.html')
-# 
-# @app.route('/south_korea')
-# def south_korea():
-#   return render_template('trips/south_korea.html')
  
 #Evan 
 @app.route('/login')
