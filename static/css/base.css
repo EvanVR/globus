@@ -1,6 +1,3 @@
-/* Danai Roumelioti, dr3248@drexel.edu */
-/* CS530: dr3248, Assignment 2 */
-
 body {
     font-size: 1rem;
     background: #eee;
@@ -136,6 +133,7 @@ footer {
 
 #trips .col-lg-4 {
     text-align: center;
+    border-right: 1pt solid #aaa;
 }
 
 #trips img {
@@ -153,7 +151,7 @@ footer {
     margin-top: 2rem;
 }
 
-#trips p {
+#trips ul {
     width: 100%;
     margin: 2rem auto 1rem;
     font-size: 1.1rem;
@@ -180,7 +178,18 @@ table {
    /* position: relative; */
    /* left: 30rem; */
    background-color: #FFC600;
+   margin-bottom: 1rem;
    
+}
+
+#trips .date {
+    color: #FFC600;
+    background-color: #282A3A;
+    margin: 2rem auto;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #trips .btn:hover {
@@ -206,11 +215,15 @@ table {
     #trips .col-sm-12 {
         text-align: center;
     }
+    #trips .date {
+        width: 5rem;
+    }
 }
 /* #oceania tr p { */
     /* margin-left: 1rem; */
     /* padding: 1rem; */
 /* } */
+
 /* Cards */
 
 .card-header h3 {
@@ -234,6 +247,12 @@ table {
     background-color: #DDA400;
 }
 
+
+/* Trip Details */
+.trip-details {
+    width: 80%;
+    margin:auto;
+}
 
 /*card img ------------EVAN*/   
 
