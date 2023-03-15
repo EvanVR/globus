@@ -71,17 +71,28 @@
 
 
                     </ul>
+
                     <ul class="navbar-nav ms-auto">
+                        {% if session['user'] %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle{% if active == 'Login' %} active{% endif %}" href="#" role="button" id="navbarDropdown"
                                 data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
-                                Signup/Login
+                                <!-- Signup/Login -->
+                                Welcome {{ session['user']['name'] }}!
                             </a>
                             <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item nav-link{% if active_cont == 'Login' %} active{% endif %}" href="/login">Login</a>
+                                <a class="dropdown-item nav-link" href="/wishlist">My Wishlist</a>
+                                <a class="dropdown-item nav-link" href="/logout">Log Out</a>
+                                <!-- <a class="dropdown-item nav-link{% if active_cont == 'Asia' %} active{% endif %}" href="/asia">Asia</a> -->
                              </div>                                                            
                         </li>
+                        {% else %}
+                        <li class="nav-item{% if active == 'Login' %} active{% endif %}">
+                            <a class="nav-link" href="/login">User Account</a>
+                        </li>
+                        {% endif %}
                     </ul>
+                    
                 </div>
             </div>
         </div>

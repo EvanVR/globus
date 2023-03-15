@@ -1,23 +1,30 @@
 from database import Database
 
-from flask import Flask, g, json, render_template, request
+from flask import Flask, g, json, render_template, redirect, request, session
+from passlib.hash import pbkdf2_sha256
 
 # DATABASE_PATH = 'dev/bikes.db'
 
 app = Flask(__name__)
 
-# def get_db():
-    # db = getattr(g, '_database', None)
-    # if db is None:
-        # db = Database(DATABASE_PATH)
-    # return db
+DATABASE_PATH = 'goats.db'
 
-# @app.teardown_appcontext
-# def close_connection(exception):
-    # db = getattr(g, '_database', None)
-    # if db is not None:
-        # db.close()
- 
+app = Flask(__name__)
+app.secret_key = b'demokeynotreal!'
+
+
+def get_db():
+    db = getattr(g, '_database', None)
+    if db is None:
+        db = Database(DATABASE_PATH)
+    return db
+
+
+@app.teardown_appcontext
+def close_db(exception):
+    db = getattr(g, '_database', None)
+    if db is not None:
+        db.close()
 
 @app.route('/')
 def home():
@@ -195,9 +202,9 @@ def cuba():
     return render_template('trips/cuba.html')
  
 #Evan 
-@app.route('/login')
-def login():
-    return render_template('login.html')
+# @app.route('/login')
+# def login():
+#     return render_template('login.html')
 
 
 #Evan
@@ -235,6 +242,58 @@ def details():
    
 
 ############################################################
+
+
+
+
+
+@app.route('/signup', methods=['GET', 'POST'])
+def create_user():
+    if request.method == 'POST':
+        name = request.form['name']
+        username = request.form['username']
+        typed_password = request.form['password']
+        if name and username and typed_password:
+            encrypted_password = pbkdf2_sha256.encrypt(
+                typed_password, rounds=200000, salt_size=16)
+            get_db().create_user(name, username, encrypted_password)
+            return redirect('/login')
+    return render_template('signup.html')
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    message = None
+    if request.method == 'POST':
+        username = request.form['username']
+        typed_password = request.form['password']
+        if username and typed_password:
+            user = get_db().get_user(username)
+            if user:
+                if pbkdf2_sha256.verify(typed_password, user['encrypted_password']):
+                    session['user'] = user
+                    return redirect('/')
+                else:
+                    message = "Incorrect password, please try again"
+            else:
+                message = "Unknown user, please try again"
+        elif username and not typed_password:
+            message = "Missing password, please try again"
+        elif not username and typed_password:
+            message = "Missing username, please try again"
+    return render_template('login.html', message=message)
+
+
+@app.route('/logout')
+def logout():
+    session.pop('user', None)
+    return redirect('/')
+
+
+@app.route('/wishlist')
+def wishlist():
+    return render_template('wishlist.html')
+
 
 if __name__ == '__main__':
     app.run(host='localhost', port=8080, debug=True)
