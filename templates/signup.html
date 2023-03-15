@@ -7,7 +7,7 @@ Login
 
 {% block content %}
 
-<h4>Login page </h4>
+<h4>Signup page </h4>
  
    <div class = "login-css">
 
@@ -20,16 +20,14 @@ Login
             <div class="col-lg-7 px-5">
                <h1 class = "font-weight-bold py-3">Globus</h1>
                <h4>Signin into your account</h4>
+               <form method="POST" name="signupform" action="/signup">
 
+                <div class="form-row">
+                    <div class="col-lg-7">
+                       <input type="name" name = "name" class="form-control my-3 p-4" placeholder="Name">
+                    </div>
+                 </div>
 
-               {% if message %}
-               <div class="alert alert-danger">
-                   {{ message }}
-               </div>
-               {% endif %}
-
-
-               <form method="POST" name="loginform" action="/login">
                   <div class="form-row">
                      <div class="col-lg-7">
                         <input type="email" name = "username" class="form-control my-3 p-4" placeholder="Email">
@@ -44,10 +42,10 @@ Login
 
                   <div class="form-row">
                      <div class="col-lg-7">
-                        <button type="submit" class="btn1 mt-3 mb-5">Login</button>
+                        <button type="submit" class="btn1 mt-3 mb-5">Create Account</button>
                      </div>
                   </div>
-                  <p>Don't have an account? <a href="/signup">Register here</a></p>
+                  <!-- <p>Don't have an account? <a href="#">Register here</a></p> -->
                </form>
             </div>
          </div>
@@ -56,3 +54,6 @@ Login
 </div>
 
  {% endblock %}
+
+
+ 
