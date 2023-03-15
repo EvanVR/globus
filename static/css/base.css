@@ -4,12 +4,6 @@ body {
     font-family: Helvetica;
 }
 
-/* p { */
-    /* margin: auto; */
-    /* font-size: 1.1rem; */
-    /* padding: 0 0 1%; */
-/* } */
-
 .content {
     padding: 1rem 2rem;
 }
@@ -22,7 +16,6 @@ footer {
     margin-top: 3rem;
     width: 100%;
     position: relative;
-    /* position:fixed; */
     bottom: 0;
     left:0;
 }
@@ -66,28 +59,16 @@ footer {
 
 #home {
     text-align: center;
-    /* width: 75%; */
     margin: 2% auto 120px;
 }
 
 .carousel-section {
     padding: 2% 10%;
-    /* background-color: #ff4c68;
-*/}
+}
 
 .home-img {
     width: 100%;
-    /* height: 10%; */
 }
-
-/* .btn { */
-    /* margin: 1rem; */
-/* } */
-
-/* .jumbotron { */
-    /* padding: 1.5rem; */
-    /* background: 0; */
-/* } */
 
 /* About page */
 
@@ -128,7 +109,6 @@ footer {
 
 #regions .region-col {
     padding: 1rem;
-    /* margin-top: 1rem; */
 }
 
 #trips .col-lg-4 {
@@ -140,7 +120,6 @@ footer {
     border-radius: 100%;
     width: 70%;
     margin: 1rem;
-    /* margin: 2rem 0 1rem 2rem; */
 }
 
 #trips .col-lg-8 {
@@ -165,36 +144,43 @@ footer {
     background-color: #ddd;
 }
 
-table {
-    width: 70%;
-    margin: 2rem 20rem 1rem 7rem;
-}
-
-#trips tr {
-    border: 1pt solid #ddd;
-}
+/* table { */
+    /* width: 70%; */
+    /* margin: 2rem 20rem 1rem 7rem; */
+/* } */
+/*  */
+/* #trips tr { */
+    /* border: 1pt solid #ddd; */
+/* } */
 
 #trips .btn {
-   /* position: relative; */
-   /* left: 30rem; */
    background-color: #FFC600;
    margin-bottom: 1rem;
    
 }
 
-#trips .date {
-    color: #FFC600;
-    background-color: #282A3A;
-    margin: 2rem auto;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 10px;
-    text-align: center;
-}
-
 #trips .btn:hover {
     background-color: #DDA400;
 }
+
+#trips .date {
+    color: #FFC600;
+    background-color: #282A3A;
+    margin: 3.5rem auto;
+    /* width: 5rem; */
+    width: auto;
+    /* height: auto; */
+    height: 8.5rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+#trips hr {
+    margin:0;
+}
+
 
 @media (max-width: 1200px) {
     #trips img {
@@ -215,9 +201,9 @@ table {
     #trips .col-sm-12 {
         text-align: center;
     }
-    #trips .date {
-        width: 5rem;
-    }
+    /* #trips .date { */
+        /* width: 5rem; */
+    /* } */
 }
 /* #oceania tr p { */
     /* margin-left: 1rem; */
@@ -247,6 +233,9 @@ table {
     background-color: #DDA400;
 }
 
+#packages .region-col {
+    padding: 1rem;
+}
 
 /* Trip Details */
 .trip-details {
