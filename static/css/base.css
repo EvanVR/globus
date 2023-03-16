@@ -20,6 +20,14 @@ footer {
     left:0;
 }
 
+footer .contact {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+footer .copyright {
+    padding: 1.5rem 0 1rem;
+}
 /* Navigation Bar */
 
 #navbar {
@@ -89,6 +97,11 @@ footer {
 
 #reviews {
     margin-top: 5rem;
+}
+
+#reviews .card {
+    height: 33rem;
+    margin-bottom: 1rem;
 }
 
 /* About page */
