@@ -3,8 +3,6 @@ from database import Database
 from flask import Flask, g, json, render_template, redirect, request, session
 from passlib.hash import pbkdf2_sha256
 
-# DATABASE_PATH = 'dev/bikes.db'
-
 app = Flask(__name__)
 
 DATABASE_PATH = 'goats.db'
